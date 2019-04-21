@@ -1,0 +1,92 @@
+	Create project
+
+-Intellij Community
+https://start.spring.io/
+
+Add Web and Lombok
+
+Generate project
+
+Extract project from archive
+
+Open Intellij -> Import project -> Import as Maven Project
+-> (Choose all checkboxes) -> next -> next -> finish
+
+
+- Intellij Ultimate
+
+Create Project
+Choose Spring Initializr
+Next
+(choose technologies): web, lombok
+Next, next, finish
+
+-------------------------------------------------------
+GitHub login
+
+New (green button)
+
+Enter repository name (i.e., java-1h-git-demo)
+
+
+--------------------------------------------------------
+
+git init
+
+git remote add origin https://github.com/edwardKatsCourse/java-1h-git-demo.git
+
+--------------------------------------------------
+
+git add .		-> let GIT know, that all files are managed by GIT
+
+--------------------------------------------------
+git commit -m "first commit"
+git push origin master
+
+Login: 
+https://github.com/ "edwardKatsCourse" /java-1h-git-demo
+
+Password: <your password>
+
+--- if there is message like this ----
+fatal: unable to auto-detect email address (got 'blah-blah')
+
+--- then enter those commands ---
+
+git config --global user.email "GITHUB EMAIL"
+git config --global user.name "GITHUB USERNAME"
+
+--------------------------------------------------
+1. Create 2 files:
+- ignore-me.txt
+- do-not-ignore-me.txt
+
+2. Add ignore-me.txt to .gitignore
+
+3. git add .
+4. git commit -m "added ignore-me.txt to .gitignore"
+5. git push origin master
+
+Enter username/password ...
+
+---------------------------------------------------
+1. Create another spring project
+2. Create another github repository
+3. Commands
+
+git init
+git remote add origin https://GITHUB_USERNAME:GITHUB_PASSWORD@github.com/edwardKatsCourse/another-repo.git
+git add .
+git commit -m "first commit"
+git push origin master
+
+4. Add Controller with @RestController
+5. git add .
+6. git commit -m "added controller"
+7. git push origin master
+------------------------------------
+git clone https://github.com/edwardKatsCourse/java-1h-git-demo.git
+git pull origin master
+
+
+
